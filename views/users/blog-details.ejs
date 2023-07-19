@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+
+    <!-- Partial navbar start-->
+    <%- include('../partials/nav') %>
+        <!-- Partial navbar end-->
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/static/images/<%=blog.resim %>" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-9">
+                    <h1 class="h3 mb-3">
+                        <%= blog.baslik%>
+                    </h1>
+                    <p>
+                        <%= blog.altbaslik %>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <%- blog.aciklama  %>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+</body>
+
+</html>
